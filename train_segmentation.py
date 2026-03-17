@@ -411,10 +411,11 @@ def main():
 
     # Transforms
     transform = transforms.Compose([
-        transforms.Resize((h, w)),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-    ])
+    transforms.Resize((h, w)),
+    transforms.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.2), # Isse shadows/light handle hogi
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+])
 
     mask_transform = transforms.Compose([
         transforms.Resize((h, w)),
