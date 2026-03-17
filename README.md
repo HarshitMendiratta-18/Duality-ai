@@ -11,14 +11,13 @@ This project focuses on **Semantic Segmentation** for offroad environments using
 ## 🚀 Visual Results (Live Preview)
 Here is how our model predicts the terrain compared to the ground truth.
 
-| Input Image | Ground Truth | Model Prediction |
-| :---: | :---: | :---: |
-| ![Input](test_results/comparisons/cc000016.png) | ![GT](test_results/masks_color/cc000016_mask_color.png) | ![Pred](test_results/masks_color/cc000016_pred_color.png) |
-| ![Input](test_results/comparisons/cc000019.png) | ![GT](test_results/masks_color/cc000019_mask_color.png) | ![Pred](test_results/masks_color/cc000019_pred_color.png) |
+| Comparison (Input | Ground Truth | Prediction) |
+| :---: |
+| ![Comparison 1](test_results/comparisons/sample_0_comparison.png) |
+| ![Comparison 2](test_results/comparisons/sample_1_comparison.png) |
+| ![Comparison 3](test_results/comparisons/sample_2_comparison.png) |
 
 > **Note:** The model shows high accuracy in identifying 'Sky' and 'Landscape' but is currently being refined for 'Rocks' and 'Logs'.
-
----
 
 ## 📊 Performance Metrics
 After training for 10 epochs, we achieved a **Mean IoU of 0.2980**, surpassing the baseline of 0.2478.
