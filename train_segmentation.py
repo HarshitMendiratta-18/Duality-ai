@@ -473,8 +473,13 @@ def main():
     classifier = classifier.to(device)
 
     # Loss and optimizer
-    loss_fct = torch.nn.CrossEntropyLoss()
-    optimizer = optim.SGD(classifier.parameters(), lr=lr, momentum=0.9)
+  # Class weights: Logs(6) aur Rocks(7) ko 5x importance de rahe hain
+    # Sequence: [BG, Trees, LushB, DryG, DryB, Clutter, Logs, Rocks, Landscape, Sky]
+    weights = torch.tensor([1.0, 1.5, 1.5, 1.2, 2.0, 2.5, 5.0, 5.0, 1.0, 0.5]).to(device)
+
+    loss_fct = torch.nn.CrossEntropyLoss(weight=weights)
+    optimizer = optim.AdamW(classifier.parameters(), lr=1e-4, weight_decay=1e-2)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=15, gamma=0.1)
 
     # Training history
     history = {
