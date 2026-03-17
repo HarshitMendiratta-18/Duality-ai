@@ -520,6 +520,7 @@ def main():
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
+            scheduler.step()
 
             train_losses.append(loss.item())
             train_pbar.set_postfix(loss=f"{loss.item():.4f}")
