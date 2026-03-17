@@ -11,6 +11,7 @@ This project focuses on **Semantic Segmentation** for offroad environments using
 ## 🚀 Visual Results (Live Preview)
 Here is how our model predicts the terrain compared to the ground truth.
 
+
 | Comparison (Input | Ground Truth | Prediction) |
 | :---: |
 | ![Comparison 1](test_results/comparisons/sample_0_comparison.png) |
