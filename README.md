@@ -34,7 +34,7 @@ Our model excels at identifying safe paths vs. obstacles in low-texture offroad 
 
 | Input RGB Image | Ground Truth | Model Prediction |
 | :---: | :---: | :---: |
-| ![RGB](test_results/comparisons/sample_0_rgb.png) | ![GT](test_results/comparisons/sample_0_gt.png) | ![Pred](test_results/comparisons/sample_0_pred.png) |
+| [![RGB](test_results/comparisons/sample_0_rgb.png](https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145202.png)) | ![GT](test_results/comparisons/sample_0_gt.png) | ![Pred](test_results/comparisons/sample_0_pred.png) |
 
 ---
 
