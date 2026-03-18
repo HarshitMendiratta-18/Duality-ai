@@ -33,7 +33,7 @@ We utilize the state-of-the-art **DINOv2 (ViT-Small)** backbone for high-fidelit
 Our model excels at identifying safe paths vs. obstacles in low-texture offroad environments.
 
 | Following images shows the prediction and accuracy of our project.
-| ((Screenshot 2026-03-17 145202.png)) | (Screenshot 2026-03-17 145749.png) | (Screenshot 2026-03-17 145409.png) | (Screenshot 2026-03-17 145823.png)
+| ((Screenshot 2026-03-17 145202.png)) | (Screenshot 2026-03-17 145202.png) | (Screenshot 2026-03-17 145409.png) | (Screenshot 2026-03-17 145823.png)
 
 
 
