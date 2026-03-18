@@ -18,7 +18,7 @@
 ---
 
 ## 📊 Performance & Results
-We achieved a robust **0.74 mIoU**, surpassing the baseline requirements.
+We achieved a robust **0.74-0.80 mIoU**, surpassing the baseline requirements.
 
 ### 📈 Training Metrics & Optimization
 The graphs below show the optimization of **Loss** and the growth of **mIoU** over 10 epochs.
@@ -39,10 +39,9 @@ We analyzed performance across 10 classes. The model shows exceptional accuracy 
 ## 🚀 Visual Inference (Model Predictions)
 The following comparisons demonstrate the model's ability to distinguish between safe terrains and offroad obstacles.
 
-| AI Prediction |
-| :---: | :---: | :---: |
-| <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample1.png" width="280"> | 
-| <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample2.png" width="280"> | 
+
+| <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample1.png" width="380"> | 
+| <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample2.png" width="380"> | 
 
 > *Note: Using the frozen DINOv2 backbone allowed us to maintain high spatial consistency in complex desert textures.*
 
