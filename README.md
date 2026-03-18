@@ -39,7 +39,7 @@ We analyzed performance across 10 classes. The model shows exceptional accuracy 
 ## 🚀 Visual Inference (Model Predictions)
 The following comparisons demonstrate the model's ability to distinguish between safe terrains and offroad obstacles.
 
-| Input RGB Image | Ground Truth | AI Prediction |
+| AI Prediction |
 | :---: | :---: | :---: |
 | <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample1.png" width="280"> | 
 | <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample2.png" width="280"> | 
