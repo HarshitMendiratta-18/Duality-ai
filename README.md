@@ -37,27 +37,7 @@ Our model excels at identifying safe paths vs. obstacles in low-texture offroad 
 | [![RGB](test_results/comparisons/sample_0_rgb.png](https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145202.png)) | ![GT](test_results/comparisons/sample_0_gt.png) | ![Pred](test_results/comparisons/sample_0_pred.png) |
 
 
-### 🚀 Model Predictions
-| Input Scene | Ground Truth | AI Prediction |
-| :---: | :---: | :---: |
-| <img src="test_results/sample_rgb.png" width="250"> | <img src="test_results/sample_gt.png" width="250"> | <img src="test_results/sample_pred.png" width="250"> |
 
-## 📊 Performance Metrics
-Our model was evaluated based on the **Mean IoU (mIoU)** metric. After optimization, we achieved a score of **0.2980**, significantly outperforming the competition baseline.
-
-### 📈 Training Progress
-The following graphs show the steady decrease in **Training Loss** and the corresponding increase in **mIoU** over epochs, proving the model's learning stability.
-
-<p align="center">
-  <img src="results/training_graphs.png" width="600" alt="Training Loss and IoU Graph">
-</p>
-
-### 🏆 Class-wise IoU Analysis
-We analyzed the model's precision across all 10 desert terrain classes. While 'Sky' and 'Landscape' reached near-perfect scores, we are actively fine-tuning for complex textures like 'Rocks'.
-
-<p align="center">
-  <img src="results/per_class_metrics.png" width="600" alt="Class-wise IoU Bar Chart">
-</p>
 
 ---
 
@@ -66,8 +46,8 @@ The primary goal of **Edu-Fin** is accurate perception. Below are samples of the
 
 | Input (Real Scene) | Ground Truth (Label) | Model Prediction |
 | :---: | :---: | :---: |
-| <img src="results/sample1.png" width="300"> | <img src="results/sample1_gt.png" width="300"> | <img src="results/sample1_pred.png" width="300"> |
-| <img src="results/sample2.png" width="300"> | <img src="results/sample2_gt.png" width="300"> | <img src="results/sample2_pred.png" width="300"> |
+| <img src="Screenshot 2026-03-17 145202.png" width="300"> | <img src="results/sample1_gt.png" width="300"> | <img src="results/sample1_pred.png" width="300"> |
+| <img src="Screenshot 2026-03-17 145409.png" width="300"> | <img src="results/sample2_gt.png" width="300"> | <img src="results/sample2_pred.png" width="300"> |
 
 > **Note:** The model shows high confidence in identifying safe navigable paths (Landscape) vs. critical obstacles (Rocks/Logs).
 
