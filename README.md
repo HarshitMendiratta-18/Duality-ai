@@ -9,64 +9,55 @@
 ---
 
 ## 🌟 The Vision: Where Education Meets Fintech
-**Edu-Fin** solves two critical student problems: **Academic Engagement** and **Financial Insecurity**. We’ve built a **Proof-of-Competency (PoC)** engine that rewards deep learning with real-world value.
+**Edu-Fin** solves academic engagement and student financial insecurity through a **Proof-of-Competency (PoC)** engine. 
 
-- **The Education Task:** Students master autonomous navigation and environment perception.
-- **The AI Verification:** Our DINOv2-based model (this project) autonomously verifies the student's work quality through Semantic Segmentation.
-- **The FinTech Reward:** Achieving a target mIoU triggers a "Minting Event," rewarding the student with **Edu-Credits** redeemable for cafeteria discounts.
-
----
-
-## 🚀 Technical Core: Offroad Segmentation
-We utilize the state-of-the-art **DINOv2 (ViT-Small)** backbone for high-fidelity feature extraction in unstructured desert terrains.
-
-
-
-### 📊 Performance Metrics
-| Metric | Value | Result |
-| :--- | :--- | :--- |
-| **Mean IoU** | **0.84** | 🚀 *Surpassed Baseline (0.2478)* |
-| **Inference Time** | **< 50ms** | ⚡ *Real-time Edge Ready* |
-| **Top Accuracy** | **93% (Sky)** | ⭐ *Excellent* |
-
-### 🔍 Inference Comparison
-Our model excels at identifying safe paths vs. obstacles in low-texture offroad environments.
-
-assets/Screenshot 2026-03-18 115256.png
-
+- **The Education:** Students master autonomous perception using Duality AI's synthetic desert datasets.
+- **The Verification:** Our model acts as an automated examiner, verifying work quality via Semantic Segmentation.
+- **The FinTech Reward:** High-accuracy segmentation triggers a reward event in the form of **Edu-Credits**.
 
 ---
 
+## 📊 Performance & Results
+We achieved a robust **0.2980 mIoU**, surpassing the baseline requirements.
 
+### 📈 Training Metrics & Optimization
+The graphs below show the optimization of **Loss** and the growth of **mIoU** over 10 epochs.
+
+<p align="center">
+  <img src="assets/graphs.jpg" width="700" alt="Training Curves">
+</p>
+
+### 🏆 Class-wise IoU Breakdown
+We analyzed performance across 10 classes. The model shows exceptional accuracy for 'Sky' and 'Landscape' (Navigable paths).
+
+<p align="center">
+  <img src="assets/class_iou.jpg" width="700" alt="Class IoU Bar Chart">
+</p>
 
 ---
 
-## 🛠️ Key Technical Features
-1. **DINOv2 Backbone:** Frozen features ensure high accuracy with low computational overhead.
-2. **Duality ID Mapping:** Precise mapping of raw synthetic pixel IDs (e.g., 7100 Landscape, 10000 Sky) to standard training indices.
-3. **Optimized Segmentation Head:** A lightweight convolutional head designed for rapid inference on campus-level edge devices.
-4. **Auto-Checkpointing:** Implemented a persistence layer to save/load model weights (`best_model.pth`), preventing redundant training cycles.
+## 🚀 Visual Inference (Model Predictions)
+The following comparisons demonstrate the model's ability to distinguish between safe terrains and offroad obstacles.
+
+| Input RGB Image | Ground Truth | AI Prediction |
+| :---: | :---: | :---: |
+| <img src="assets/sample1.jpg" width="280"> | <img src="assets/sample1.jpg" width="280"> | <img src="assets/sample1.jpg" width="280"> |
+| <img src="assets/sample2.jpg" width="280"> | <img src="assets/sample2.jpg" width="280"> | <img src="assets/sample2.jpg" width="280"> |
+
+> *Note: Using the frozen DINOv2 backbone allowed us to maintain high spatial consistency in complex desert textures.*
 
 ---
 
 ## 👥 The Team: Duality AI
-We represent a multidisciplinary team focused on bridging the gap between AI research and practical utility.
-
-- **Harshit Mendiratta** — *Technical Lead & AI Engineering*
-- **Ayush Rai** — *Model Optimization & Performance Evaluation*
-- **Rakshit Dahiya** — *Technical Reporting & Research*
-- **Saanvi Bhayana** — *Data Visualization & System Logic*
+- **Harshit Mendiratta** — Technical Lead & AI Architecture
+- **Ayush Rai** — Model Optimization & Accuracy Analysis
+- **Rakshit Dahiya** — Documentation & Technical Reporting
+- **Saanvi Bhayana** — Data Visualization & Presentation Logic
 
 ---
 
 ## 🔧 Installation & Usage
-
-### 1. Setup Environment
-```bash
-# Clone the repo
-git clone [https://github.com/HarshitMendiratta-18/Duality-ai.git](https://github.com/HarshitMendiratta-18/Duality-ai.git)
-cd Duality-ai
-
-# Initialize environment
-ENV_SETUP/setup_env.bat
-conda activate EDU
+1. **Clone:** `git clone https://github.com/HarshitMendiratta-18/Duality-ai.git`
+2. **Setup:** Run `ENV_SETUP/setup_env.bat` and activate the `EDU` environment.
+3. **Inference:** `python test_segmentation.py --model_path best_model.pth`
+4.
