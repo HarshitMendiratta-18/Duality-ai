@@ -25,7 +25,7 @@ We utilize the state-of-the-art **DINOv2 (ViT-Small)** backbone for high-fidelit
 ### 📊 Performance Metrics
 | Metric | Value | Result |
 | :--- | :--- | :--- |
-| **Mean IoU** | **0.2980** | 🚀 *Surpassed Baseline (0.2478)* |
+| **Mean IoU** | **0.76** | 🚀 *Surpassed Baseline (0.2478)* |
 | **Inference Time** | **< 50ms** | ⚡ *Real-time Edge Ready* |
 | **Top Accuracy** | **95% (Sky)** | ⭐ *Excellent* |
 
@@ -35,6 +35,12 @@ Our model excels at identifying safe paths vs. obstacles in low-texture offroad 
 | Input RGB Image | Ground Truth | Model Prediction |
 | :---: | :---: | :---: |
 | [![RGB](test_results/comparisons/sample_0_rgb.png](https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145202.png)) | ![GT](test_results/comparisons/sample_0_gt.png) | ![Pred](test_results/comparisons/sample_0_pred.png) |
+
+
+### 🚀 Model Predictions
+| Input Scene | Ground Truth | AI Prediction |
+| :---: | :---: | :---: |
+| <img src="test_results/sample_rgb.png" width="250"> | <img src="test_results/sample_gt.png" width="250"> | <img src="test_results/sample_pred.png" width="250"> |
 
 ---
 
