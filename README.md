@@ -24,14 +24,14 @@ We achieved a robust **0.74 mIoU**, surpassing the baseline requirements.
 The graphs below show the optimization of **Loss** and the growth of **mIoU** over 10 epochs.
 
 <p align="center">
-  <img src="assets/graphs.jpg" width="700" alt="Training Curves">
+  <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/class_iou.png" width="700" alt="Training Curves">
 </p>
 
 ### 🏆 Class-wise IoU Breakdown
 We analyzed performance across 10 classes. The model shows exceptional accuracy for 'Sky' and 'Landscape' (Navigable paths).
 
 <p align="center">
-  <img src="assets/class_iou.jpg" width="700" alt="Class IoU Bar Chart">
+  <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/class_iou.png" width="700" alt="Class IoU Bar Chart">
 </p>
 
 ---
