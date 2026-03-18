@@ -24,7 +24,7 @@ We achieved a robust **0.74 mIoU**, surpassing the baseline requirements.
 The graphs below show the optimization of **Loss** and the growth of **mIoU** over 10 epochs.
 
 <p align="center">
-  <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/class_iou.png" width="700" alt="Training Curves">
+  <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/graphs.png" width="700" alt="Training Curves">
 </p>
 
 ### 🏆 Class-wise IoU Breakdown
@@ -41,8 +41,8 @@ The following comparisons demonstrate the model's ability to distinguish between
 
 | Input RGB Image | Ground Truth | AI Prediction |
 | :---: | :---: | :---: |
-| <img src="assets/sample1.jpg" width="280"> | 
-| <img src="assets/sample2.jpg" width="280"> | 
+| <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample1.png" width="280"> | 
+| <img src="https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/assets/sample2.png" width="280"> | 
 
 > *Note: Using the frozen DINOv2 backbone allowed us to maintain high spatial consistency in complex desert textures.*
 
