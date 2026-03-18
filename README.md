@@ -34,22 +34,14 @@ Our model excels at identifying safe paths vs. obstacles in low-texture offroad 
 
 | Input RGB Image | Ground Truth | Model Prediction |
 | :---: | :---: | :---: |
-| [![RGB](test_results/comparisons/sample_0_rgb.png](https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145202.png)) | ![GT](test_results/comparisons/sample_0_gt.png) | ![Pred](test_results/comparisons/sample_0_pred.png) |
+| ((https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145202.png)) | (https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145749.png) | (https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145409.png) | (https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145823.png)
 
 
 
 
 ---
 
-## 🚀 Visual Comparisons (Inference)
-The primary goal of **Edu-Fin** is accurate perception. Below are samples of the model's predictions compared against the Ground Truth.
 
-| Input (Real Scene) | Ground Truth (Label) | Model Prediction |
-| :---: | :---: | :---: |
-| <img src="Screenshot 2026-03-17 145202.png" width="300"> | <img src="results/sample1_gt.png" width="300"> | <img src="results/sample1_pred.png" width="300"> |
-| <img src="Screenshot 2026-03-17 145409.png" width="300"> | <img src="results/sample2_gt.png" width="300"> | <img src="results/sample2_pred.png" width="300"> |
-
-> **Note:** The model shows high confidence in identifying safe navigable paths (Landscape) vs. critical obstacles (Rocks/Logs).
 
 ---
 
