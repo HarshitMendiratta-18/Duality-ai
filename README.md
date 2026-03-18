@@ -18,7 +18,7 @@
 ---
 
 ## 📊 Performance & Results
-We achieved a robust **0.2980 mIoU**, surpassing the baseline requirements.
+We achieved a robust **0.74 mIoU**, surpassing the baseline requirements.
 
 ### 📈 Training Metrics & Optimization
 The graphs below show the optimization of **Loss** and the growth of **mIoU** over 10 epochs.
@@ -41,8 +41,8 @@ The following comparisons demonstrate the model's ability to distinguish between
 
 | Input RGB Image | Ground Truth | AI Prediction |
 | :---: | :---: | :---: |
-| <img src="assets/sample1.jpg" width="280"> | <img src="assets/sample1.jpg" width="280"> | <img src="assets/sample1.jpg" width="280"> |
-| <img src="assets/sample2.jpg" width="280"> | <img src="assets/sample2.jpg" width="280"> | <img src="assets/sample2.jpg" width="280"> |
+| <img src="assets/sample1.jpg" width="280"> | 
+| <img src="assets/sample2.jpg" width="280"> | 
 
 > *Note: Using the frozen DINOv2 backbone allowed us to maintain high spatial consistency in complex desert textures.*
 
