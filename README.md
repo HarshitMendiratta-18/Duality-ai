@@ -32,9 +32,8 @@ We utilize the state-of-the-art **DINOv2 (ViT-Small)** backbone for high-fidelit
 ### 🔍 Inference Comparison
 Our model excels at identifying safe paths vs. obstacles in low-texture offroad environments.
 
-| Input RGB Image | Ground Truth | Model Prediction |
-| :---: | :---: | :---: |
-| ((https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145202.png)) | (https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145749.png) | (https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145409.png) | (https://github.com/HarshitMendiratta-18/Duality-ai/blob/main/Screenshot%202026-03-17%20145823.png)
+| Following images shows the prediction and accuracy of our project.
+| ((Screenshot 2026-03-17 145202.png)) | (Screenshot 2026-03-17 145749.png) | (Screenshot 2026-03-17 145409.png) | (Screenshot 2026-03-17 145823.png)
 
 
 
